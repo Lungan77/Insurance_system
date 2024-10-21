@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-image: url('https://img.freepik.com/free-vector/father-shaking-hands-with-insurance-agent_74855-4412.jpg?t=st=1729497065~exp=1729500665~hmac=fef38e23c9dabb0712deb7bbf2a8b6e000a00aec52a8994a1928329a198b73ab&w=740');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+.head{
+    width: 100%;
+    background-color: rgba(169, 169, 240, 0.5);
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+#open{
+    display: none;
+}
+
+#close{
+    display: none;
+}
+
+.head .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a{
+    color: rgb(34, 35, 36);
+}
+
+nav ul hr{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .container{
+        width: 95%;
+        padding: 10px;
+    }
+
+    nav ul hr{
+        display: block;
+    }
+
+    nav{
+        display: block;
+    }
+
+    nav ul{
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        top: 60px;
+        padding: 10px;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(169, 169, 240, 0.5);
+    }
+}

@@ -6,20 +6,29 @@
     <title>Insurance</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Insurance</h1>
+    <header class="head">
+        <div class="container">
+            <div>
+                <h1>Insurance</h1>
+            </div>
+            <div id="open" onclick="down()">
+                <p>&#9776;</p>
+            </div>
+            <div id="close" onclick="up()">
+                <p class="material-icons">&#xe5cd;</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li><hr>
+                    <li><a href="#">Plans</a></li><hr>
+                    <li><a href="#">About Us</a></li><hr>
+                    <li><a href="#">Contacts</a></li><hr>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Plans</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
     </header>
 </body>
 </html>
