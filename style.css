@@ -1,70 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
     font-family: "Open Sans", sans-serif;
     list-style: none;
     text-decoration: none;
+    overflow: hidden;
 }
-body{
+
+body {
     background-image: url('https://img.freepik.com/free-vector/father-shaking-hands-with-insurance-agent_74855-4412.jpg?t=st=1729497065~exp=1729500665~hmac=fef38e23c9dabb0712deb7bbf2a8b6e000a00aec52a8994a1928329a198b73ab&w=740');
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
 }
-.head{
+
+.head {
     width: 100%;
     background-color: rgba(169, 169, 240, 0.5);
 }
-.container{
+
+.container {
     width: 80%;
     margin: auto;
 }
 
-#open{
-    display: none;
-}
-
-#close{
-    display: none;
-}
-
-.head .container{
+.head .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-items: center;
 }
 
-nav ul{
+nav ul {
     display: flex;
     gap: 20px;
 }
 
-nav ul li a{
+nav ul li a {
     color: rgb(34, 35, 36);
 }
 
-nav ul hr{
+nav ul hr {
     display: none;
 }
 
+/* Initially hide the close button and nav */
+#close, nav {
+    display: none;
+}
+
+/* Class to toggle the visibility of nav */
+.nav-open {
+    display: block;
+}
+
 @media (max-width: 800px) {
-    .container{
+
+    body{
+        background-image: none;
+    }
+
+    .container {
         width: 95%;
         padding: 10px;
     }
 
-    nav ul hr{
+    .head h1{
+        font-size: 1.2em;
+    }
+
+    nav ul hr {
         display: block;
     }
 
-    nav{
+    #open {
         display: block;
+        cursor: pointer;
+        margin: 0px;
     }
 
-    nav ul{
+    #close {
+        display: none;
+        margin: 0px;
+        cursor: pointer;
+    }
+
+    nav ul {
         position: absolute;
         right: 0px;
         left: 0px;
@@ -73,5 +97,19 @@ nav ul hr{
         flex-direction: column;
         width: 100%;
         background-color: rgba(169, 169, 240, 0.5);
+    }
+}
+
+@media (min-width: 801px) {
+    #open {
+        display: none;
+    }
+
+    #close {
+        display: none;
+    }
+
+    nav {
+        display: block;
     }
 }
