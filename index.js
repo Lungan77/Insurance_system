@@ -2,11 +2,11 @@ const open = document.getElementById('open');
 const close = document.getElementById('close');
 const nav = document.querySelector('nav');
 
-// Ensure both elements exist
+// Ensure all elements exist
 if (open && close && nav) {
     const toggle = () => {
         // Toggle classes based on the current state
-        if (nav.style.display == 'block') {
+        if (nav.style.display === 'block') {
             nav.style.display = 'none';
             open.style.display = 'block';
             close.style.display = 'none';
@@ -32,7 +32,7 @@ if (open && close && nav) {
             // Ensure mobile styles are respected
             open.style.display = 'block';
             close.style.display = 'none';
-            nav.style.display = 'none';
+            nav.style.display = 'none'; // Initially hide the nav
         }
     };
 
